@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Where is Don Cheats</string>
+
+    <string name="current_won_matches">Current Amount of Won Games:\n</string>
+    <string name="desc_Text">Enter new Amount of Won Games:</string>
+    <string name="update_won_matches">Update Amount of Won Games!</string>
+    <string name="invalid_won_matches">Please choose a Amount of Won Games in [1; 400]</string>
+</resources>
