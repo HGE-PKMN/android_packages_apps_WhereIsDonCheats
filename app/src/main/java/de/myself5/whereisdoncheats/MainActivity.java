@@ -30,7 +30,7 @@ public class MainActivity extends ActionBarActivity {
                             update_won_games();
                         }
                     });
-            // updateTV();
+            //updateTV();
 
         Intent intent = getIntent();
         String action = intent.getAction();
@@ -48,7 +48,8 @@ public class MainActivity extends ActionBarActivity {
             int won_games = Integer.parseInt(WonGamesS);
             if (won_games > 0 && won_games <= 400) {
                 sendIntent(WonGamesS, "WIDCheatCodeInput");
-                // updateTV();
+                Toast.makeText(this, getString(R.string.updated), Toast.LENGTH_SHORT).show();
+                //updateTV();
             } else {
                 Toast.makeText(this, getString(R.string.invalid_won_matches), Toast.LENGTH_SHORT).show();
             }
