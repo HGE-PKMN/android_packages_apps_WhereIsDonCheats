@@ -6,4 +6,5 @@
     <string name="update_won_matches">Update Amount of Won Games!</string>
     <string name="invalid_won_matches">Please choose a Amount of Won Games in [1; 400]</string>
     <string name="updated">Amount of Won Games has been updated!</string>
+    <string name="unlock_all_levels">Unlock All Floors</string>
 </resources>

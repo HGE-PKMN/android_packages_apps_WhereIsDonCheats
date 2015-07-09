@@ -47,10 +47,18 @@
         android:id="@+id/update_won_matches"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/new_won_matches"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="110dp"
         android:text="@string/update_won_matches"
-        android:theme="@style/ButtonTheme" />
+        android:theme="@style/ButtonTheme"
+        android:layout_below="@+id/unlock_all_levels"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unlock_all_levels"
+        android:id="@+id/unlock_all_levels"
+        android:layout_below="@+id/new_won_matches"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

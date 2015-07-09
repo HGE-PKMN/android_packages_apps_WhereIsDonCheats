@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -66,6 +67,10 @@ public class MainActivity extends ActionBarActivity {
         sendIntent.setAction(Intent.ACTION_SEND);
         sendIntent.putExtra(Intent.EXTRA_TEXT, param);
         sendIntent.putExtra(Intent.EXTRA_SUBJECT, type);
+        boolean isChecked = ((CheckBox) findViewById(R.id.unlock_all_levels)).isChecked();
+        if(isChecked){
+            sendIntent.putExtra(Intent.EXTRA_UID, "true");
+        }
         sendIntent.setType("text/plain");
         startActivity(sendIntent);
     }
